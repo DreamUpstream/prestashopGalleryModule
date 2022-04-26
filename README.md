@@ -13,5 +13,5 @@
 - connect to database with logins found in docker-compose.yml
 - install Prestashop
 - add extragallery to /modules
-- install Extra Gallery in module catalog
+- install Extra Gallery in module catalog (installation may take some time on docker)
 - make sure to change gallery label text & maximum amount of images per product in the module configure section!
