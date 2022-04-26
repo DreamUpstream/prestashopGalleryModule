@@ -145,7 +145,6 @@ class ExtraGallery extends Module{
         return $this->display(__FILE__, 'views/templates/hook/gallery.tpl');
     }
     public function getContent() {
-
         
         $output = "";
         if(Tools::isSubmit('submit' . $this->name)) {
