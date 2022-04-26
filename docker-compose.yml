@@ -1,0 +1,28 @@
+version: "3.9"
+services:
+  mysql:
+    image: mysql:8
+    container_name: prestashop-db
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      MYSQL_DATABASE: prestashop
+      MYSQL_ROOT_PASSWORD: prestashop
+    ports:
+      - 3306:3306
+    networks:
+      - prestashop
+    volumes:
+      - ./mysql/data:/var/lib/mysql
+  prestashop:
+    image: prestashop/prestashop:1.7.8
+    container_name: prestashop
+    environment:
+      DB_SERVER: mysql
+    ports:
+      - 8080:80
+    networks:
+      - prestashop
+    volumes:
+      - ./src:/var/www/html/
+networks:
+  prestashop:
