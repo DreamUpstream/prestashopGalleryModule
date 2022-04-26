@@ -14,4 +14,5 @@
 - install Prestashop
 - add extragallery to /modules
 - install Extra Gallery in module catalog
-- #### change gallery label text & maximum amount of images per product in the module configure section!
+
+* make sure to change gallery label text & maximum amount of images per product in the module configure section!
