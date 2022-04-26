@@ -1,4 +1,4 @@
-## Prestashop 1.7+ extra gallery module
+## Prestashop 1.7 extra gallery module
 
 ### Features:
 
